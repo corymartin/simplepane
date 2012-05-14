@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Pane Plugin</title>
+  <style>
+    .my-btn-highlight { border-bottom:solid 6px hotpink; }
+  </style>
+</head>
+<body>
+
+  <!-- EXAMPLE 01 -->
+  <div id="panes_container_01">
+    <h1>Example 01</h1>
+    Click
+    <ul>
+      <li><a href="#" class="simple-pane-button" name="Performance" title="Performance">Performance</a></li>
+      <li><a href="#" class="simple-pane-button" name="Allocation" title="Allocation">Allocation</a></li>
+      <li><a href="#" class="simple-pane-button" name="Simulation" title="Simulation">Simulation</a></li>
+    </ul>
+
+    <div class="simple-pane">
+      <p>Aaaaaaaaaaaaaaaaaaaaa</p>
+      <p>Aaaaaaaaaaaaaaaaaaaaa</p>
+      <p>Aaaaaaaaaaaaaaaaaaaaa</p>
+    </div>
+    <div class="simple-pane">
+      <p>Bbbbbbbbbbbbbbbbbbbbb</p>
+      <p>Bbbbbbbbbbbbbbbbbbbbb</p>
+      <p>Bbbbbbbbbbbbbbbbbbbbb</p>
+    </div>
+    <div class="simple-pane">
+      <p>Cccccccccccccccccccccc</p>
+      <p>Cccccccccccccccccccccc</p>
+      <p>Cccccccccccccccccccccc</p>
+    </div>
+  </div>
+
+
+  <!-- EXAMPLE 02 -->
+  <div id="panes_container_02">
+    <h1>Example 02</h1>
+    Hover
+    <div class="simple-pane">
+      <p style="font-size:30px;">:)</p>
+    </div>
+    <div class="simple-pane">
+      <p style="font-size:30px;">:(</p>
+    </div>
+
+    <span class="simple-pane-button" style="cursor:pointer">Smile!</span>
+    - - - - -
+    <span class="simple-pane-button" style="cursor:pointer">Frown.</span>
+  </div>
+
+
+  <!--
+  <script src="http://zeptojs.com/zepto.js"></script>
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+  <script src="simplepane.js"></script>
+  <script>
+    $(function() {
+      $('#panes_container_01').simplepane();
+
+      $('#panes_container_02').simplepane({
+        buttonHighlightClass : 'my-btn-highlight',
+        activationEvent      : 'mouseover'
+      });
+    });
+  </script>
+</body>
+</html>
