@@ -14,7 +14,7 @@ activate the first pane, the second button the second pane, etc.
 Buttons must have `class="simple-pane-button"`
 Panes   must have `class="simple-pane"`
 
-See example.html
+See [example.html](https://github.com/corymartin/simplepane/blob/master/example.html)
 
 
 Config Options
